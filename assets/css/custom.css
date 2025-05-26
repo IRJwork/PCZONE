@@ -1,0 +1,33 @@
+.scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.product-card {
+  width: 300px;
+  margin: 0 15px;
+  flex-shrink: 0;
+}
+
+/* Pour ajuster les .card */
+.product-card .card {
+  width: 100%;
+}
+
+/* Animation keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
